@@ -34,8 +34,6 @@ def range_sum(L,R):              # this method is called range sum quries o(1)
         
 print(range_sum(1,3)) 
 print(range_sum(0,3))
-print(range_sum(2,5))  
-
 
 
 arr = [2,6,7,3,1,9]
@@ -50,7 +48,6 @@ def range_append(L,R):
 
 print(range_append(1,3)) 
 print(range_append(0,3))
-print(range_append(2,4))
 
 
 
