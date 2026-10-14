@@ -50,6 +50,8 @@ print(range_append(1,3))
 print(range_append(0,3))
 
 
+
+#Difference Array 
 n = 5
 
 diff = [0] * (n+1)
@@ -64,4 +66,34 @@ for i in range(n):
     running_sum += diff[i]
     arr[i] = running_sum
 
-print(arr)
+#print(arr)
+
+
+
+#Suppose the original array contains five zeros, and we have these operations:
+#Add 3 to indices 1 through 3.
+#Add 2 to indices 2 through 4.
+#Add -1 to indices 0 through 2.
+
+n = 5
+updates = {
+    (1,3,3),
+    (2,4,2),
+    (0,2,-1)
+}
+
+diff = [0] * (n+1)
+
+for L,R,X in updates:
+    diff[L] += X
+    diff[R+1] -= X
+    
+arr = [0]* n
+total_sum = 0
+ 
+for i in range (n):
+    total_sum += diff[i]
+    arr[i] = total_sum
+    
+print(arr)   
+
