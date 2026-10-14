@@ -50,4 +50,18 @@ print(range_append(1,3))
 print(range_append(0,3))
 
 
+n = 5
 
+diff = [0] * (n+1)
+
+diff[1] += 3
+diff[4] -= 3
+
+arr = [0] * n
+running_sum = 0
+
+for i in range(n):
+    running_sum += diff[i]
+    arr[i] = running_sum
+
+print(arr)
