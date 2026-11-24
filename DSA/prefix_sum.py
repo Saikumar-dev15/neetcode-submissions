@@ -56,8 +56,8 @@ n = 5
 
 diff = [0] * (n+1)
 
-diff[1] += 3
-diff[4] -= 3
+diff[1] += 4
+diff[4] -= 4
 
 arr = [0] * n
 running_sum = 0
